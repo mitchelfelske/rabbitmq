@@ -3,6 +3,7 @@ require 'bunny'
 connection = Bunny.new
 connection.start
 
+
 channel = connection.create_channel
 
 queue = channel.queue('hello')
